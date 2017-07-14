@@ -8,15 +8,14 @@
 
     <style>
         table {
-            border-collapse:collapse;
+            border-collapse: collapse;
         }
+
         td {
-            border: 1px solid black ;
+            border: 1px solid black;
         }
     </style>
 </head>
-
-
 
 
 <?php
@@ -143,12 +142,22 @@ echo '------------------ Dz1.7 ----------------------<br>';
 <?php
 echo "<br><br>";
 echo '------------------ Dz1.8 ----------------------<br>';
-$str = "Hello world Hello world Hello world Hello world ";
+$str = "Hello world Hello world Hello world Hello world";
+$words = explode(' ', $str);
+//print_r($words);
 echo $str . '<br>';
-echo count($str);
-for($i=0; $i < count($str); $i++){
-    echo $str[$i] . "<br>";
+$x = 0;
+while ($x < count($words)) {
+    if ($x != count($words) - 1) {
+        $new_str .= $words[$x] . '+';
+    } else {
+        $new_str .= $words[$x];
+    }
+    $x++;
 }
+echo '<br>';
+echo $new_str;
+
 
 
 
