@@ -69,10 +69,10 @@ echo "<br><br>";
 echo '------------------ Dz1.6 ----------------------<br>';
 
 $car = array(
-    'model' => NULL,
-    'speed' => NULL,
-    'doors' => NULL,
-    'year' => NULL,
+    'model' => null,
+    'speed' => null,
+    'doors' => null,
+    'year' => null,
 );
 
 $bmw = $car;
