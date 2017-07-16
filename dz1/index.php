@@ -146,14 +146,16 @@ $str = "Hello world Hello world Hello world Hello world";
 $words = explode(' ', $str);
 //print_r($words);
 echo $str . '<br>';
-$x = 0;
-while ($x < count($words)) {
-    if ($x != count($words) - 1) {
+$count = count($words);
+$x = $count-1;
+while ($x > 0) {
+    if ($x != 1) {
+        echo "X: ". $x .'<br>';
         $new_str .= $words[$x] . '+';
     } else {
         $new_str .= $words[$x];
     }
-    $x++;
+    $x--;
 }
 echo '<br>';
 echo $new_str;
