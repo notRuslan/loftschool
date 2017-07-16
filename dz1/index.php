@@ -55,11 +55,11 @@ echo "<br><br>";
 echo '------------------ Dz1.4 ----------------------<br>';
 
 $age = -2;
-if ($age >= 18 AND $age <= 65) {
+if ($age >= 18 and $age <= 65) {
     echo "Вам   еще работать   и   работать";
 } elseif ($age > 65) {
     echo 'Вам   пора   на   пенсию';
-} elseif ($age >= 1 AND $age <= 17) {
+} elseif ($age >= 1 and $age <= 17) {
     echo "Вам   ещё   рано   работать";
 } else {
     echo "Неизвестный   возраст";
@@ -123,15 +123,13 @@ echo '------------------ Dz1.7 ----------------------<br>';
         echo "<tr>";
         for ($j = 1; $j < 11; $j++) {
             $k = $j * $i;
-            if (!($i % 2) AND !($j % 2)) {
+            if (!($i % 2) and !($j % 2)) {
                 echo "<td>( $k )</td>";
-            } elseif ($i % 2 AND $j % 2) {
+            } elseif ($i % 2 and $j % 2) {
                 echo "<td>[ $k ]</td>";
             } else {
                 echo "<td> $k </td>";
-
             }
-
         }
         echo "</tr>";
     }
